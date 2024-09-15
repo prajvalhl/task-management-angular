@@ -14,11 +14,13 @@ import { DUMMY_USERS } from './dummy-users';
 export class AppComponent {
   allUsers = DUMMY_USERS;
   selectedName?: string;
+  selectedUserId!: string;
 
   onSelect(id: string) {
     for (let i of this.allUsers) {
       if (i.id === id) {
         this.selectedName = i.name;
+        this.selectedUserId = i.id;
       }
     }
     // console.log(`We got ${id} id from the event emitter`);
