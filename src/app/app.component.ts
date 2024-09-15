@@ -13,7 +13,7 @@ import { DUMMY_USERS } from './dummy-users';
 })
 export class AppComponent {
   allUsers = DUMMY_USERS;
-  selectedName: string = '';
+  selectedName?: string;
 
   onSelect(id: string) {
     for (let i of this.allUsers) {
