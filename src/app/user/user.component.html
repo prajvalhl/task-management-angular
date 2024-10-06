@@ -1,6 +1,6 @@
-<div>
-  <button (click)="onClick()">
+<app-card>
+  <button [class.active]="selected" (click)="onClick()">
     <img [src]="imagePath" [alt]="imageName" />
     <span>{{ imageName }}</span>
   </button>
-</div>
+</app-card>
